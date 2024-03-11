@@ -8,7 +8,7 @@ int cbinsearch(int* arr, int size, int value) {
             return 0;
         }
     } else {
-        int result = cbinsearch(arr, size / 2, value) + \
+        return cbinsearch(arr, size / 2, value) + \
             cbinsearch(arr + (size / 2), size / 2 + size % 2, value);
     }
 }
